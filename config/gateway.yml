@@ -12,6 +12,8 @@ spring:
           lowerCaseServiceId: true
           enabled: true
       routes:
+        - id: classify
+              uri: lb://classify
         - id: client
           uri: lb://client
           predicates:
