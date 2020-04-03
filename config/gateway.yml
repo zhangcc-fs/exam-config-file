@@ -14,6 +14,8 @@ spring:
       routes:
         - id: classify
           uri: lb://common-classify
+          predicates:
+            - Path=/classify/**
         - id: client
           uri: lb://client
           predicates:
