@@ -1,7 +1,7 @@
 # 监控配置
 spring:
   redis:
-    host: localhost
+    host: zhangmc_fs.com
     port: 6379
     password: admin
 management:
@@ -10,5 +10,6 @@ management:
       exposure:
         #exclude: shutdown,threaddump   #此处控制的是不开放哪些端点
         include: "*" #此处控制的是开放哪些端点，
+  endpoint:
     health:
       show-details: always
