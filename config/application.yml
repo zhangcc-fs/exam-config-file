@@ -1,7 +1,7 @@
 # 监控配置
 spring:
   redis:
-    host: zhangmc_fs.com
+    host: zhangcc_fs.com
     port: 6379
     password: admin
 management:
