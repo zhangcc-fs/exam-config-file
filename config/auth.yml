@@ -10,8 +10,6 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-zmc-sso:
-  web-security:
-    ignore-uri: /webjars/**,/doc.html,/favicon.ico,/swagger-resources/**,/v2/api-docs/**
+auth:
   http-security:
-    ignore-uri: /oauth/**,/login,/loginout,/actuator/**
+    ignore-uri: /oauth/**,/actuator/**,/v2/api-docs/**
